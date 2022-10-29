@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+
+  overflow: auto;
+}
+
+.header {
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  -webkit-box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  -moz-box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+/* nav bar container  */
+.navbar {
+  width: 60px;
+  height: 100% !important;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 94, 125, 1) 0%,
+    rgba(6, 87, 173, 1) 11%,
+    rgba(10, 81, 171, 1) 25%,
+    rgba(17, 70, 168, 1) 61%,
+    rgba(30, 49, 162, 1) 93%
+  );
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+/* nav contents */
+.nav {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+/* icon 1 */
+#nav-head {
+  margin-bottom: 100px;
+}
+/* nav */
+.nav-items {
+  font-size: 25px;
+  color: white;
+  padding-left: 8px;
+}
+
+/* contact active */
+.icon-3 {
+  border-left: 4px solid white;
+  font-size: 30px;
+}
+/* hover nav items */
+.nav-items:hover {
+  font-size: 30px;
+  color: white;
+  border-left: 4px solid white;
+}
+.icon-1:hover {
+  font-size: 25px;
+  color: white;
+}
+
+.icon-1:hover {
+  font-size: 25px;
+  color: white;
+}
+/* <!-- contact icon --> */
+.contact-icon {
+  display: inline-block;
+  width: 60px;
+  height: 70px;
+  margin-right: 20px;
+}
+.main-page {
+  padding: 10px 100px;
+  height: fit-content;
+}
+
+.logo-cont {
+  width: 100%;
+  height: 100px;
+
+  align-items: center;
+}
+
+.contact-head {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact-head div {
+  display: flex;
+  align-items: center;
+}
+
+.contact-head-text {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.welcome-text {
+  font-size: 18px;
+  font-weight: 600;
+
+  position: relative;
+  top: 10px;
+}
+
+.search-contact {
+  width: 100%;
+  padding: 10px 30px 10px 10px;
+  height: 50px;
+  border-radius: 10px;
+  margin: auto;
+  outline: none;
+  border: 1px solid #eeecec;
+  background-color: #eeecec;
+}
+
+.traa {
+  height: fit-content;
+}
+
+.add-btn {
+  width: fit-content !important;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 94, 125, 1) 0%,
+    rgba(6, 87, 173, 1) 11%,
+    rgba(10, 81, 171, 1) 25%,
+    rgba(17, 70, 168, 1) 61%,
+    rgba(30, 49, 162, 1) 93%
+  );
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+}
+.add-btn:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
+.btn {
+  color: white !important;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+}
+
+.delete-btn {
+  width: fit-content;
+  height: 50px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 94, 125, 1) 0%,
+    rgba(6, 87, 173, 1) 11%,
+    rgba(10, 81, 171, 1) 25%,
+    rgba(17, 70, 168, 1) 61%,
+    rgba(30, 49, 162, 1) 93%
+  );
+  border-radius: 10px;
+  color: white;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+}
+
+.fa-trash:hover {
+  color: red;
+}
+
+.table-head {
+  background-color: #eeecec;
+  border-radius: 10px;
+  cursor: default;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.table-column {
+  background-color: #eeecec;
+}
+.pop-up {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.form-container {
+  height: fit-content;
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.exit-icon {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 0px 3px;
+  background-color: black;
+  position: relative;
+  bottom: 90px;
+  left: 10px;
+  float: right;
+}
+.exit-icon a {
+  color: white;
+}
+.add-contact-head {
+  padding: 10px 20px;
+}
+
+.add-contact-head h1 {
+  font-weight: 400;
+}
+
+.form-contents {
+  padding: 10px 20px;
+}
+
+.submit-btn {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 94, 125, 1) 0%,
+    rgba(6, 87, 173, 1) 11%,
+    rgba(10, 81, 171, 1) 25%,
+    rgba(17, 70, 168, 1) 61%,
+    rgba(30, 49, 162, 1) 93%
+  );
+  border-radius: 10px;
+  color: white;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  transition: 0.2s ease-in;
+  width: 150px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submit-btn:hover {
+  background: green;
+}
+/* before shii
+.submit-btn:hover span{
+    display: none;
+}
+
+.submit-btn:hover:before{
+    content: "SAVE";
+} */
+
+.cancel-btn {
+  background-color: grey;
+  border-radius: 10px;
+  color: white;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  border: none;
+  font-weight: bold;
+  width: 150px;
+  margin-right: 20px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.cancel-btn:hover {
+  background-color: red;
+  color: black !important;
+  font-weight: bold;
+}
+
+.data-field {
+  padding: 30px 20px 30px 20px;
+  height: fit-content;
+  background-color: #eeecec;
+  border-radius: 10px;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+}
+
+.data-content {
+  display: flex;
+
+  text-align: center;
+
+  align-content: center;
+}
+
+.edit-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(98, 94, 125, 1) 0%,
+    rgba(6, 87, 173, 1) 11%,
+    rgba(10, 81, 171, 1) 25%,
+    rgba(17, 70, 168, 1) 61%,
+    rgba(30, 49, 162, 1) 93%
+  );
+  border-radius: 10px;
+  color: greenyellow !important;
+  box-shadow: -1px 21px 34px -14px rgba(0, 0, 255, 0.63);
+  font-weight: bold;
+}
+
+.edit-btn:hover {
+  background: green;
+  color: white !important;
+  font-weight: bold;
+}
+
+.table-recorded {
+  cursor: pointer;
+}
+
+.table-recorded:hover {
+  background-color: #eeecec;
+}
+.table-recorded:active {
+  background-color: #eeecec;
+}
+.no-records {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+/* play around */
+
+.contt {
+  height: 400px;
+  width: 100%;
+  background-color: green;
+}
+
+.cont {
+  height: 100vh;
+  padding: 10px 100px;
+  background-color: red;
+}
